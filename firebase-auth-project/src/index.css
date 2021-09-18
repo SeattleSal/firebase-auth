@@ -1,3 +1,6 @@
+/* ./src/index.css 
+*  replace original contentsw to include Tailwinds
+*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
