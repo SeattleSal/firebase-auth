@@ -15,3 +15,10 @@ intent is to play with firebase auth in a React project. I want to get the follo
 - Created React project using npx create-react-app
 - Created firebase project
 - Chose CSS framework - Tailwind CSS [Resource](https://tailwindcss.com/docs/guides/create-react-app)
+- Created a Sign Up page and a Login page
+- Added react-router-dom to be able to navigate different pages
+- Add firebase auth
+
+
+## TO DO
+- Make Button reusable component and prettier
