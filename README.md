@@ -9,3 +9,9 @@ intent is to play with firebase auth in a React project. I want to get the follo
 * input checks for email/pwd
 * error displays for user
 
+## Steps
+
+- Created GitHub Repo.
+- Created React project using npx create-react-app
+- Created firebase project
+- Chose CSS framework - Tailwind CSS [Resource](https://tailwindcss.com/docs/guides/create-react-app)

@@ -1,32 +1,33 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState} from 'react'
 
-function LoginPage() {
+function SignUpPage() {
 
-    const loginEmailRef = useRef();
-    const loginPasswordRef = useRef();
+    const signUpEmailRef = useRef();
+    const signUpPasswordRef = useRef();
 
-    const handleLoginSubmit = (e) => {
+
+    const handleSignUpSubmit = (e) => {
         e.preventDefault();
-        console.log("login!")
+        console.log("submitted!")
 
-        const email = loginEmailRef.current.value;
-        const password = loginPasswordRef.current.value;
+        const email =  signUpEmailRef.current.value;
+        const password = signUpPasswordRef.current.value;
 
         console.log(email, password)
     }
-
 
     return (
         <div className='h-screen flex bg-gray-bg1'>
             <div className='w-full max-w-md m-auto bg-white rounded-lg border border-primaryBorder shadow-default py-10 px-16'>
    
-                <h1 className='text-2xl font-medium text-primary mt-4 mb-12 text-center'>Log in to your account 🔐</h1>
-                <form onSubmit={handleLoginSubmit}>
+                <h1 className='text-2xl font-medium text-primary mt-4 mb-12 text-center'>
+                    Sign up for an account!</h1>
+                <form onSubmit={handleSignUpSubmit}>
                     <div>
                         <label htmlFor='email'>Email</label>
                         <input 
                             type="email" 
-                            ref={loginEmailRef}
+                            ref={signUpEmailRef}
                             className={`w-full p-2 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4`}
                             id="email" 
                             placeholder="Your email" 
@@ -37,7 +38,7 @@ function LoginPage() {
                         <label htmlFor="Password">Password</label>
                         <input 
                             type="password" 
-                            ref={loginPasswordRef}
+                            ref={signUpPasswordRef}
                             className={`w-full p-2 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4`}
                             id="password"
                             placeholder="Your Password"
@@ -46,7 +47,9 @@ function LoginPage() {
                     </div>
                     <div className='flex justify-center items-center mt-g'>
                         <button
-                            className={'bg-green py-2 px-4 text-sm rounded border border-green focus:outline-none focus:border-green-dark'}>LOGIN</button>
+                            type="submit"
+                            className={'bg-green py-2 px-4 text-sm rounded border border-green focus:outline-none focus:border-green-dark'}>
+                                SIGN UP</button>
                     </div>
 
 
@@ -56,4 +59,4 @@ function LoginPage() {
     )
 }
 
-export default LoginPage
+export default SignUpPage
