@@ -1,4 +1,5 @@
-import React, { useRef, useState} from 'react'
+import React, { useRef, useState} from 'react';
+// import Firebase from '../firebase';
 
 function SignUpPage() {
 
@@ -12,6 +13,12 @@ function SignUpPage() {
 
         const email =  signUpEmailRef.current.value;
         const password = signUpPasswordRef.current.value;
+        console.log('try to create firebae auth account')
+
+        // Firebase.auth()
+        // .createUserWithEmailandPassword(email, password)
+        // .then(() => alert("account created!"))
+        // .catch(error => console.log(error))
 
         console.log(email, password)
     }
