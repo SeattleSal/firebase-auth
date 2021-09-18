@@ -19,7 +19,7 @@ intent is to play with firebase auth in a React project. I want to get the follo
 - Added react-router-dom to be able to navigate different pages
 - Created Firebase Auth project with email auth turned on
 - Created .env file with firebase secrets and added .env to gitignore 
-
+NEXT STEP - firebase connection for auth new user 
 
 
 ## TO DO
